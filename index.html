@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -75,11 +76,12 @@
 
     </header>
 
-    <main>
+    <!-- <main> -->
+
         <section class="get_to_know_us">
             <div class="container go_to_container_padding">
                 <div class="get_to_parent_div">
-                    <div class="go_to_know_text_part">
+                    <div class="go_to_know_text_part" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" >
                         <h2 class="get_to_know_us_h2 get_to_common_margin">GET TO KNOW US</h2>
                         <h2 class="get_to_know_us_h22 get_to_common_margin">Our jetly save your time and give you
                             comfort in flights</h2>
@@ -90,22 +92,22 @@
                             repudiandae totam iste omnis eos autem rem cupiditate ratione porro exercitationem doloribus
                             facilis.</p>
 
-                        <div class="check_line">
+                        <div class="check_line" data-aos="fade-up" data-aos-delay="200">
 
                             <img src="./images/check-line.png" alt="">
                             <p>There are many variation of passage of lorem.</p>
                         </div>
-                        <div class="check_line">
+                        <div class="check_line" data-aos="fade-up" data-aos-delay="400">
 
                             <img src="./images/check-line.png" alt="">
                             <p>Available but the majority alteration.</p>
                         </div>
-                        <div class="discover get_to_common_margin2">
+                        <div class="discover get_to_common_margin2"  data-aos="zoom-in" data-aos-duration="1000">
                             <div class="discover_button">
                                 <a class="discover_btn" href="">DISCOVER MORE</a>
                             </div>
 
-                            <div class="phone_parent">
+                            <div class="phone_parent" data-aos="fade-left" data-aos-delay="500">
                                 <a class="phone" href=""><i class="fa-solid fa-phone"></i></a>
                                 <div class="callanytime">
                                     <span class="span_call">CALLANYTIME</span>
@@ -114,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="go_know_us_img_part">
+                    <div class="go_know_us_img_part" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" >
                         <img src="./images/Group 6.png" alt="">
                     </div>
 
@@ -128,7 +130,7 @@
         <section>
             <div class="container">
                 <div class="get_discountparentdiv">
-                    <div class="get_discount">
+                    <div class="get_discount" data-aos="fade-right" data-aos-duration="1000">
                         <div class="get_discount_text">
                             <h3 class="miles">COLLECT MILES</h3>
                             <h3 class="next_flights">Get discount next flights with our card</h3>
@@ -143,65 +145,84 @@
                         </div>
                     </div>
 
-                    <div class="exclusive">
+                    <div class="exclusive" data-aos="zoom-in" data-aos-duration="1000">
                         <h3 class="exclusiveh3">Exclusive</h3>
                         <h3 class="offersh3">new offer</h3>
                     </div>
-                    <div class="join_our_cabin">
+                    <div class="join_our_cabin" data-aos="fade-up" data-aos-duration="1000">
                         <h3 class="exclusiveh3">Join our</h3>
                         <h3 class="offersh3">cabin crew</h3>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="private_flight_img  common_sectionmargin">
-            <div class="container go_to_container_padding">
+        <section class="private_flight_img  common_sectionmargin" data-aos="fade-up">
+            <div class="container go_to_container_padding" data-aos="fade-up" data-aos-delay="200">
 
-                <h3 class="private_h3">GET YOUR FLIGHT</h3>
-                <h3 class="private_request_h3">Request for private flight</h3>
+                <h3 class="private_h3" data-aos="fade-down">GET YOUR FLIGHT</h3>
+                <h3 class="private_request_h3" data-aos="fade-down" data-aos-delay="200">Request for private flight</h3>
                 <div class="private_flight_parentdiv">
-                    <div class="first_flight_date">
-                        <a class="fly_from" href="">Fly form</a>
+                    <div class="first_flight_date" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="fly_from">
+                            <input type="text" placeholder="Fly from" required>
+                        </div>
                         <div class="date">
-                            <a href="">Select date</a>
-                            <a href=""><i class="fa-solid fa-calendar"></i></a>
+                            <input type="date" required>
+
                         </div>
                         <div class="baggage">
-                            <a href="">Select Baggage</a>
-                            <a href=""><i class="fa-solid fa-caret-down"></i></a>
+                            <select required>
+                                <option value="" disabled selected>Select Baggage</option>
+                                <option value="No Baggage">No Baggage</option>
+                                <option value="Small Bag">Small Bag</option>
+                                <option value="Large Bag">Large Bag</option>
+                            </select>
                         </div>
                     </div>
 
-                    <div class="form_to">
-                        <a class="fly_from2" href="">Fly to</a>
+                    <div class="form_to" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="fly_from2">
+                            <input type="text" placeholder="Fly to" required>
+                        </div>
                         <div class="date_select">
 
-                            <a class="selectdate2" href="">Select date</a>
+
+                            <input type="date" class="selectdate2" required>
                             <div class="passengers">
-                                <a class="" href="">Select date</a>
-                                <a href=""><i class="fa-solid fa-caret-down"></i></a>
+                                <select required>
+                                    <div class="samiran">
+                                        <div class="ghyji">
+                                            <option value="" disabled selected>Passengers</option>
+                                        </div>
+                                        <div class="ghyjikiolpr">
+                                            <option value="1">1 Passenger</option>
+                                            <option value="2">2 Passengers</option>
+                                            <option value="3">3 Passengers</option>
+                                            <option value="4">4+ Passengers</option>
+                                        </div>
+                                    </div>
+                                </select>
                             </div>
                         </div>
-                        <div class="passenger_button">
+                        <div class="passenger_button" data-aos="fade-up" data-aos-delay="500">
                             <a class="passenger_btn" href="">BOOK NOW</a>
                         </div>
 
 
                     </div>
                 </div>
-
             </div>
-
-
         </section>
+        
+        
 
-        <section class="select_service">
-            <div class="container select_service_padding">
-                <h3 class="what">WHAT WE'RE OFFERING</h3>
-                <h3 class="according">Select the service</h3>
-                <h3 class="according according_margin">according to your work</h3>
+        <section class="select_service" data-aos="fade-up">
+            <div class="container select_service_padding" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="what" data-aos="fade-down">WHAT WE'RE OFFERING</h3>
+                <h3 class="according" data-aos="fade-down" data-aos-delay="200">Select the service</h3>
+                <h3 class="according according_margin" data-aos="fade-down" data-aos-delay="300">according to your work</h3>
                 <div class="select_service_parendiv">
-                    <div class="business_charter">
+                    <div class="business_charter" data-aos="zoom-in" data-aos-delay="300">
                         <div class="business_charter_img">
                             <img src="./images/services-1-1.png" alt="">
                         </div>
@@ -214,7 +235,7 @@
                             <a href=""><i class="fa-solid fa-greater-than"></i></a>
                         </div>
                     </div>
-                    <div class="business_charter">
+                    <div class="business_charter" data-aos="zoom-in" data-aos-delay="400">
                         <div class="business_charter_img">
                             <img src="./images/services-1-2-1.png" alt="">
                         </div>
@@ -227,7 +248,7 @@
                             <a href=""><i class="fa-solid fa-greater-than"></i></a>
                         </div>
                     </div>
-                    <div class="business_charter">
+                    <div class="business_charter" data-aos="zoom-in" data-aos-delay="500">
                         <div class="business_charter_img">
                             <img src="./images/services-1-3-1.png" alt="">
                         </div>
@@ -240,7 +261,7 @@
                             <a href=""><i class="fa-solid fa-greater-than"></i></a>
                         </div>
                     </div>
-                    <div class="business_charter">
+                    <div class="business_charter" data-aos="zoom-in" data-aos-delay="600">
                         <div class="business_charter_img">
                             <img src="./images/services-1-4-1.png" alt="">
                         </div>
@@ -254,54 +275,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="color">
+                <div class="color" data-aos="fade-up" data-aos-delay="700">
 
                 </div>
             </div>
 
         </section>
 
-        <section class="bonnie_tolbet_main">
-            <div class="container CUSTOMERS_FEEDBACK_padding">
-                <h3 class="cutomer">CUSTOMERS FEEDBACK</h3>
-                <h3 class="talking_about">What they're talking about</h3>
-                <h3 class="talking_about  talking_about_for_margin">our flight services</h3>
+        <section class="bonnie_tolbet_main" data-aos="fade-up">
+            <div class="container CUSTOMERS_FEEDBACK_padding" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="cutomer" data-aos="fade-down">CUSTOMERS FEEDBACK</h3>
+                <h3 class="talking_about" data-aos="fade-down" data-aos-delay="200">What they're talking about</h3>
+                <h3 class="talking_about  talking_about_for_margin" data-aos="fade-down" data-aos-delay="300">our flight services</h3>
 
                 <div class="bonnieparentdiv">
-                    <div class="bonnie">
+                    <div class="bonnie" data-aos="zoom-in" data-aos-delay="300">
                         <img class="bonnie_img" src="./images/testimonial-1-4.png" alt="">
                         <p class="bonnie_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptate
                             alias praesentium
                             voluptatum minus. Placeat corrupti earum veritatis iusto illum error ipsam maxime?</p>
                         <div class="bonnie_child">
-                            <div class="bonnie_child_anchar">
+                            <div class="bonnie_child_anchar" data-aos="flip-left" data-aos-delay="400">
                                 <a href=""><i class="fa-solid fa-star"></i></a>
                                 <a href=""><i class="fa-solid fa-star"></i></a>
                                 <a href=""><i class="fa-solid fa-star"></i></a>
                                 <a href=""><i class="fa-solid fa-star"></i></a>
                                 <a href=""><i class="fa-solid fa-star"></i></a>
                             </div>
-                            <div class="bonnie_child2">
+                            <div class="bonnie_child2" data-aos="fade-up" data-aos-delay="500">
                                 <h4 class="bonnie_tolbet_name">Bonnie tolbet</h4>
                                 <h4 class="bonnie_tolbet_name2">CUSTOMER</h4>
                             </div>
 
                         </div>
                     </div>
-                    <div class="bonnie">
+                    <div class="bonnie" data-aos="zoom-in" data-aos-delay="400">
                         <img class="bonnie_img" src="./images/testimonial-1-4.png" alt="">
                         <p class="bonnie_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptate
                             alias praesentium
                             voluptatum minus. Placeat corrupti earum veritatis iusto illum error ipsam maxime?</p>
                         <div class="bonnie_child">
-                            <div class="bonnie_child_anchar">
+                            <div class="bonnie_child_anchar" data-aos="flip-left" data-aos-delay="500">
                                 <a href=""><i class="fa-solid fa-star"></i></a>
                                 <a href=""><i class="fa-solid fa-star"></i></a>
                                 <a href=""><i class="fa-solid fa-star"></i></a>
                                 <a href=""><i class="fa-solid fa-star"></i></a>
                                 <a href=""><i class="fa-solid fa-star"></i></a>
                             </div>
-                            <div class="bonnie_child2">
+                            <div class="bonnie_child2" data-aos="fade-up" data-aos-delay="600">
                                 <h4 class="bonnie_tolbet_name">Bonnie tolbet</h4>
                                 <h4 class="bonnie_tolbet_name2">CUSTOMER</h4>
                             </div>
@@ -312,36 +333,36 @@
             </div>
         </section>
 
-        <section class="special_offer_section">
-            <div class="container">
+        <section class="special_offer_section" data-aos="fade-up">
+            <div class="container" data-aos="fade-up" data-aos-delay="200">
                 <div class="special_offer_parentdiv">
-                    <h2 class="special_first_h2">SPECIAL OFFER</h2>
-                    <h2 class="special_second_h2 special_second_h2_copy">The best service for business people who
+                    <h2 class="special_first_h2" data-aos="fade-down">SPECIAL OFFER</h2>
+                    <h2 class="special_second_h2 special_second_h2_copy" data-aos="fade-right" data-aos-delay="300">The best service for business people who
                         appreciate time</h2>
-                    <p class="special_third_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+                    <p class="special_third_para" data-aos="fade-left" data-aos-delay="400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
                         corrupti quae expedita aliquam repellendus dolores vero dolore quaerat! Nihil!</p>
-                    <a class="special_offer_btn" href="">DISCOVER MORE</a>
+                    <a class="special_offer_btn" href="" data-aos="zoom-in" data-aos-delay="500">DISCOVER MORE</a>
                 </div>
             </div>
 
 
         </section>
-        <section class="browse_legs">
-            <div class="container browse_legs_container_padding">
+        <section class="browse_legs" data-aos="fade-up">
+            <div class="container browse_legs_container_padding" data-aos="fade-up" data-aos-delay="200">
                 <div class="browse_legs_parentdiv">
-                    <div class="browse_leg_text_part">
+                    <div class="browse_leg_text_part" data-aos="fade-right" data-aos-delay="300">
                         <h2 class="browse_legs_first_h2 browse_legs_formarin">PRIVATE FLIGHTS</h2>
                         <h2 class="browse_legs_second_h2 browse_legs_formarin2">Browse legs</h2>
                         <h2 class="browse_legs_third_h2 browse_legs_formarin3">of our charters</h2>
                         <p class="browse_legs_para browse_legs_formarin4">Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Cumque earum, maxime ipsa culpa rerum sequi nemo impedit reprehenderit,
                             accusamus deleniti praesentium iusto doloremque?</p>
-                        <div class="browse_arrow">
+                        <div class="browse_arrow" data-aos="zoom-in" data-aos-delay="400">
                             <a class="browse_arrow_left" href=""><i class="fa-solid fa-arrow-left"></i></a>
                             <a class="browse_arrow_left" href=""><i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
-                    <div class="departure">
+                    <div class="departure" data-aos="fade-left" data-aos-delay="500">
                         <div class="arrival">
                             <h4>Departure</h4>
                             <a href=""><i class="fa-solid fa-plane"></i></a>
@@ -357,7 +378,7 @@
                             <a class="dep_btn" href="">BOOK NOW</a>
                         </div>
                     </div>
-                    <div class="departure">
+                    <div class="departure" data-aos="fade-left" data-aos-delay="600">
                         <div class="arrival">
                             <h4>Departure</h4>
                             <a href=""><i class="fa-solid fa-plane"></i></a>
@@ -378,13 +399,13 @@
 
         </section>
 
-        <section class="paris_section">
-            <div class="container paris_container_padding">
-                <h1 class="what_will">WHAT WILL YOU GET</h1>
-                <h1 class="what_will2">Checkout the popular jet</h1>
-                <h1 class="what_will3">charter destinations</h1>
+        <section class="paris_section" data-aos="fade-up">
+            <div class="container paris_container_padding" data-aos="fade-up" data-aos-delay="200">
+                <h1 class="what_will" data-aos="fade-down">WHAT WILL YOU GET</h1>
+                <h1 class="what_will2" data-aos="fade-right" data-aos-delay="300">Checkout the popular jet</h1>
+                <h1 class="what_will3" data-aos="fade-left" data-aos-delay="400">charter destinations</h1>
                 <div class="paris_barcelona_parendiv">
-                    <div class="paris">
+                    <div class="paris" data-aos="zoom-in" data-aos-delay="500">
                         <div class="paris_img">
                             <img src="./images/destination-1-1.png" alt="">
                         </div>
@@ -400,7 +421,7 @@
 
 
                     <div class="paris_barcelona_parendiv">
-                        <div class="paris">
+                        <div class="paris" data-aos="zoom-in" data-aos-delay="600">
                             <div class="paris_img">
                                 <img src="./images/destination-1-2.png" alt="">
                             </div>
@@ -415,7 +436,7 @@
                         </div>
                     </div>
                     <div class="paris_barcelona_parendiv">
-                        <div class="paris">
+                        <div class="paris" data-aos="zoom-in" data-aos-delay="700">
                             <div class="paris_img">
                                 <img src="./images/destination-1-3.png" alt="">
                             </div>
@@ -433,40 +454,162 @@
             </div>
         </section>
 
-        <!-- <section class="from_blog_secton">
-            <div class="container">
-                <h2>FROM THE BLOG POSTS</h2>
-                <h2>Checkout latest aviation</h2>
-                <h2>news and articles</h2>
+        <section class="from_blog_secton" data-aos="fade-up">
+            <div class="container form_the_blog_container_padd" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="form_the_blog_post1" data-aos="fade-down">FROM THE BLOG POSTS</h2>
+                <h2 class="form_the_blog_post form_the_blog_post2" data-aos="fade-right" data-aos-delay="300">Checkout latest aviation</h2>
+                <h2 class="form_the_blog_post" data-aos="fade-left" data-aos-delay="400">news and articles</h2>
                 <div class="jetly_comment_parentdiv">
-                    <div class="jetly_comment_maindiv">
+                    <div class="jetly_comment_maindiv" data-aos="zoom-in" data-aos-delay="500">
                         <div class="img_part">
                             <img src="./images/blog-7-370x336.png" alt="">
                         </div>
                         <div class="textpart">
                             <a class="text_part_btn" href="">24 Feb</a>
                             <div class="text_part_anchar">
-                            
-                                    <img src="./images/account-circle-fill.png" alt="">
-                                    <span>jetly</span>
-                                    <img src="./images/chat-3-fill.png" alt="">
-                                    <span class="lal">2 comments</span>
-                                
+
+                                <img src="./images/account-circle-fill.png" alt="">
+                                <span>jetly</span>
+                                <img src="./images/chat-3-fill.png" alt="">
+                                <span class="lal">2 comments</span>
+
                             </div>
                             <p class="text_main_para">Flight's precautionary landing in dubai of Lorem ipsum</p>
                             <div class="read_more_ancho">
-                                <a href="">Read More</a>
-                                <a class="read_more_ancho_btn" href=""></a>
+                                <a class="jetly_read_more" href="">Read More</a>
+                                <a class="read_more_ancho_btn" href=""><i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jetly_comment_maindiv" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="img_part">
+                            <img src="./images/blog2-370x336.png" alt="">
+                        </div>
+                        <div class="textpart">
+                            <a class="text_part_btn" href="">24 Feb</a>
+                            <div class="text_part_anchar">
+
+                                <img src="./images/account-circle-fill.png" alt="">
+                                <span>jetly</span>
+                                <img src="./images/chat-3-fill.png" alt="">
+                                <span class="lal">2 comments</span>
+
+                            </div>
+                            <p class="text_main_para">Flight's precautionary landing in dubai of Lorem ipsum</p>
+                            <div class="read_more_ancho">
+                                <a class="jetly_read_more" href="">Read More</a>
+                                <a class="read_more_ancho_btn" href=""><i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jetly_comment_maindiv" data-aos="zoom-in" data-aos-delay="700">
+                        <div class="img_part">
+                            <img src="./images/blog3-370x336.png" alt="">
+                        </div>
+                        <div class="textpart">
+                            <a class="text_part_btn" href="">24 Feb</a>
+                            <div class="text_part_anchar">
+
+                                <img src="./images/account-circle-fill.png" alt="">
+                                <span>jetly</span>
+                                <img src="./images/chat-3-fill.png" alt="">
+                                <span class="lal">2 comments</span>
+
+                            </div>
+                            <p class="text_main_para">Flight's precautionary landing in dubai of Lorem ipsum</p>
+                            <div class="read_more_ancho">
+                                <a class="jetly_read_more" href="">Read More</a>
+                                <a class="read_more_ancho_btn" href=""><i class="fa-solid fa-arrow-right-long"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
+        <section class="subscribe_now"  data-aos="fade-up">
+            <div class="container subscribe_container_padding">
+                <div class="subscribe_parentdiv">
+                    <div class="subscribe_text_part">
+                        <h4 class="subscribe_firsth4">SUBSCRIBE NOW</h4>
+                        <h4 class="subscribe_second4">Want to know about</h4>
+                        <h4 class="subscribe_second4">our offers first?</h4>
+                    </div>
+                    <div class="button_part" data-aos="zoom-in">
+                        <div class="subscribe_button">
+                            <a class="enter_email_button" href="">Enter email eddress</a>
+                            <div class="subscribe_under_button">
+                                <a href="">SUBSCRIBE <i class="fa-solid fa-plane for_margin_aero"></i></a>
+                            </div>
+                        </div>
+                        <div class="subscribe_chekbox" data-aos="fade-left">
+                            <a href=""><i class="fa-solid fa-square-check for_margin_aero2"></i> I've read and accept
+                                the Privacy Policy.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
 
     </main>
-    <footer></footer>
+    
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_content">
+                    
+                    <div class="footer_left" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="./images/logo-light.png" alt="Jetly Logo">
+                        <p>Private jet charters save your time and</p>
+                        <p>give you comfort.</p>
+                    </div>
+        
+                    
+                    <div class="footer_middle" data-aos="fade-up" data-aos-duration="1000">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Private Jet Catering</a></li>
+                            <li><a href="#">Destinations</a></li>
+                            <li><a href="#">Flight Search</a></li>
+                            <li><a href="#">Book Flight</a></li>
+                        </ul>
+                    </div>
+        
+                   
+                    <div class="footer_middle" data-aos="fade-up" data-aos-duration="1200">
+                        <h4>Links</h4>
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">News & Press</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+        
+                  
+                    <div class="footer_right" data-aos="fade-left" data-aos-duration="1000">
+                        <h4>Contact</h4>
+                        <p><i class="fa-solid fa-phone"></i> <span>+92 ( 8890 ) - 6780 </span></p>
+                        <p><i class="fa-solid fa-envelope"></i> <span> needhelp@company.com </span></p>
+                        <p><i class="fa-solid fa-map-marker-alt"></i> <span>30 Broklyn Golden Street.</span></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="copy_right">
+            <div class="container copy_right_container_padding">
+                <p class="copy_rightpara">&copy; Copyright 2023 by jetly.com</p>
+            </div>
+        </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+        
+   
 </body>
 
 </html>
